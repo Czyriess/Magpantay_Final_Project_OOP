@@ -1,11 +1,11 @@
 # Magpantay_Final_Project_OOP
-I. Brief Project Overview
+# I. Brief Project Overview
 
 The Medical Appointment Management System is a simple Java-based tool designed to help individuals and small healthcare clinics manage appointments. It allows users to easily add, view, and cancel appointments with an intuitive interface, making scheduling straightforward.
 
-II.How OOP Principles Were Applied
+# II.How OOP Principles Were Applied
 
-Encapsulation:
+# 1.Encapsulation:
 The Appointment class stores patient and appointment details privately, controlling access through methods to ensure secure and consistent data handling.
 
   
@@ -28,7 +28,7 @@ The Appointment class stores patient and appointment details privately, controll
     }
 }
 
-Inheritance:
+# 2.Inheritance:
 The system allows for future extensions, like specialized appointment types (e.g., online appointments), by creating subclasses that inherit from the base Appointment class.
 
 
@@ -44,13 +44,13 @@ The system allows for future extensions, like specialized appointment types (e.g
        }
     }
 
-Polymorphism:
+# 3.Polymorphism:
 By overriding the toString() method in subclasses, the system can display different representations of appointments while maintaining a unified structure.
 
 Appointment appt = new OnlineAppointment("Czyries", "Dr. Smith", "2024-12-10", "10:00", );
 System.out.println(appt.toString());  // Output: Patient: Czyries, Doctor: Dr. Smith, Date: 2024-12-10, Time: 10:00,
 
-Abstraction:
+# 4.Abstraction:
 The system hides complex logic behind a simple menu, allowing users to interact with the program without worrying about the details of appointment management.
 
 public static void main(String[] args) {
@@ -76,9 +76,10 @@ public static void main(String[] args) {
     scanner.close();
     }
 
-III. The Medical Appointment Management System aligns with Sustainable Development Goal (SDG) 3: Good Health and Well-Being. This goal aims to ensure healthy lives and promote well-being.
+# III. The Medical Appointment Management System aligns with Sustainable Development Goal (SDG) 3: Good Health and Well-Being.
+This goal aims to ensure healthy lives and promote well-being.
 
-Contribution to SDG 3:
+# Contribution to SDG 3:
 
 *Improves Efficiency: Reduces wait times and ensures healthcare providers can offer timely services.
 
@@ -91,7 +92,7 @@ Contribution to SDG 3:
 
 
 
-Sample Output:
+# Sample Output:
 
 Welcome to the Medical Appointment Management System!
 
