@@ -3,7 +3,7 @@
 
 The Medical Appointment Management System is a simple Java-based tool designed to help individuals and small healthcare clinics manage appointments. It allows users to easily add, view, and cancel appointments with an intuitive interface, making scheduling straightforward.
 
-# II.How OOP Principles Were Applied
+# II.How OOP Principles Applied
 
 # 1.Encapsulation:
 The Appointment class stores patient and appointment details privately, controlling access through methods to ensure secure and consistent data handling.
