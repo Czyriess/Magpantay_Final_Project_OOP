@@ -1,5 +1,6 @@
 # Magpantay_Final_Project_OOP
 I. Brief Project Overview
+
 The Medical Appointment Management System is a simple Java-based tool designed to help individuals and small healthcare clinics manage appointments. It allows users to easily add, view, and cancel appointments with an intuitive interface, making scheduling straightforward.
 
 II.How OOP Principles Were Applied
