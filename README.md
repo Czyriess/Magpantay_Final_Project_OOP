@@ -1,11 +1,11 @@
 # Magpantay_Final_Project_OOP
 I. Brief Project Overview
-The Medical Appointment Management System is a simple Java-based application designed to help individuals and small healthcare clinics manage appointments. It allows users to add, view, and cancel appointments, providing an easy-to-use interface to streamline the scheduling process. The system is designed with efficiency and simplicity in mind, offering key features like appointment management and real-time schedule updates. It is built using Java and applies object-oriented programming (OOP) principles to ensure flexibility and maintainability.
+The Medical Appointment Management System is a simple Java-based tool designed to help individuals and small healthcare clinics manage appointments. It allows users to easily add, view, and cancel appointments with an intuitive interface, making scheduling straightforward. The system is efficient, using object-oriented programming (OOP) principles to ensure flexibility and ease of maintenance.
 
-II. Explanation of How OOP Principles Were Applied
+II.How OOP Principles Were Applied
 
 Encapsulation:
-The system uses the Appointment class to encapsulate key appointment details such as the patient’s name, doctor’s name, date, and time. These details are stored as private fields, and access is controlled via constructors and getter/setter methods. This ensures that appointment data is handled securely and consistently.
+The Appointment class stores patient and appointment details privately, controlling access through methods to ensure secure and consistent data handling.
 
   
     class Appointment {
@@ -28,7 +28,7 @@ The system uses the Appointment class to encapsulate key appointment details suc
 }
 
 Inheritance:
-Inheritance is implemented by allowing future extensions of the system, such as specialized appointment types (e.g., online appointments). A new class, like OnlineAppointment, can inherit from Appointment and extend its functionality while reusing the core properties.
+The system allows for future extensions, like specialized appointment types (e.g., online appointments), by creating subclasses that inherit from the base Appointment class.
 
 
     class OnlineAppointment extends Appointment {
@@ -46,14 +46,13 @@ Inheritance is implemented by allowing future extensions of the system, such as 
     }
 
 Polymorphism:
-The system utilizes polymorphism, allowing the toString() method to be overridden in subclasses like OnlineAppointment. This enables different representations of appointments, even though they all share the same base class.
+By overriding the toString() method in subclasses, the system can display different representations of appointments while maintaining a unified structure.
 
-
-Appointment appt = new OnlineAppointment("John Doe", "Dr. Smith", "2024-12-13", "10:00");
+Appointment appt = new OnlineAppointment("John Doe", "Dr. Smith", "2024-12-13", "10:00", );
 System.out.println(appt.toString());  // Output: Patient: John Doe, Doctor: Dr. Smith, Date: 2024-12-13, Time: 10:00,
 
 Abstraction:
-The program hides the complex details of how appointments are stored and managed, allowing users to interact only with a simple menu. The user simply selects an option to add, view, or cancel appointments without needing to understand the underlying code logic.
+The system hides complex logic behind a simple menu, allowing users to interact with the program without worrying about the details of appointment management.
 
 public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
@@ -78,11 +77,14 @@ public static void main(String[] args) {
     scanner.close();
     }
 
-III. The Medical Appointment Management System aligns with Sustainable Development Goal (SDG) 3: Good Health and Well-Being. This goal aims to ensure healthy lives and promote well-being for all at all ages.
+III. The Medical Appointment Management System aligns with Sustainable Development Goal (SDG) 3: Good Health and Well-Being. This goal aims to ensure healthy lives and promote well-being.
 
 Contribution to SDG 3:
 
-Enhances Healthcare Efficiency: By organizing appointments and schedules, the system helps reduce patient wait times and ensures that healthcare providers can offer more timely services.
-Improves Access to Medical Care: Simplifies appointment management for patients, ensuring that they can easily schedule and attend their appointments, improving overall access to healthcare.
-Supports Small Clinics: The system offers an affordable and easy-to-use solution for small clinics or independent healthcare providers who may not have access to more complex systems.
-Promotes Mental Well-Being: By reducing the stress and confusion around managing appointments, the system helps both patients and doctors stay organized and focused, contributing to better mental well-being.
+*Improves Efficiency: Reduces wait times and ensures healthcare providers can offer timely services.
+
+*Enhances Access: Simplifies appointment scheduling, making healthcare more accessible.
+
+*Supports Small Clinics: Provides an affordable, easy-to-use solution for small healthcare providers.
+
+*Promotes Well-Being: Helps reduce stress by keeping appointments organized and manageable for both patients and healthcare workers.
